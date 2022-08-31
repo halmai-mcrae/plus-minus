@@ -8,13 +8,13 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, PropType } from "vue";
+import { defineComponent} from "vue";
+import type { PropType } from "vue";
 type IVariant = "default" | "digit" | "operator";
 type IVariantsClasses = {
   [key in IVariant]: string;
 };
 export default defineComponent({
-  // eslint-disable-next-line vue/no-reserved-component-names
   name: "Button",
   props: {
     variant: { type: String as PropType<IVariant>, default: "default" },
