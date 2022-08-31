@@ -13,7 +13,7 @@
     {
       "compilerOptions": {
         "target": "esnext",
-        "module": "esnext",
+        "--module": "esnext",
         "moduleResolution": "node",
         "strict": false,
         "jsx": "preserve",
