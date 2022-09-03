@@ -12,18 +12,20 @@
     },
     {
       "compilerOptions": {
-        "target": "esnext",
-        "--module": "esnext",
+        "module": "es2022",
+        "--module": "es2022",
+        "--moduleResolution": "node",
         "moduleResolution": "node",
-        "strict": false,
-        "jsx": "preserve",
+        "skipLibCheck": true,
+        "target": "es5",
         "sourceMap": true,
-        "resolveJsonModule": true,
-        "esModuleInterop": true,
+        "allowJs": true,
+        "checkJs": false,
+        "noImplicitAny": false,
         "lib": ["esnext", "dom"],
         "types": ["vite/client"]
       },
-      "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"]
+      "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.vue"]
     }
     
   ]
